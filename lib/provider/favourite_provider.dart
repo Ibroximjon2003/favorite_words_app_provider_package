@@ -4,7 +4,7 @@
 import 'package:flutter/material.dart';
 
 class FavouriteProvider extends ChangeNotifier{
-  final List<String> _words = [];
+   List<String> _words = [];
   List<String> get words => _words;
 
 
@@ -22,7 +22,7 @@ class FavouriteProvider extends ChangeNotifier{
     return isExist;
   }
   void clearFavourite(){
-    words.clear();
+    _words = [];
     notifyListeners();
   }
 

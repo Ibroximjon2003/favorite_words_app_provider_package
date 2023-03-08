@@ -34,6 +34,12 @@ class FavouritesPage extends StatelessWidget {
           );
         },
       ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: (){
+          provider.clearFavourite();
+        },
+        child: const Text('Clear'),
+      ),
     );
   }
 }
